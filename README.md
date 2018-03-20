@@ -28,8 +28,6 @@ public static void main(String[] args){
         DruidClient druidClient = new DruidClient("****此处需要设置****", httpClient);
         DruidResponse aa = druidClient.execute(timeseriesQuery);
         System.out.println(aa);
-    }
-
 }
 ```
 
