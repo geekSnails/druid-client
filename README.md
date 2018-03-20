@@ -12,10 +12,10 @@ To install this library, run mvn install. You can then include it in projects wi
 </dependency>  
 ```  
 ## Example   
-see the package com.qiyi.search.druidclient.test, use TimeSeries search like below:  
+see the package com.qiyi.search.druidclient.test, use TimeSeries search like below:
 
-public class TimeseriesQueryTest {
-    public static void main(String[] args){
+```
+public static void main(String[] args){
 
         TimeseriesQuery timeseriesQuery = new TimeseriesQuery();
         timeseriesQuery.setDataSource("search_pingback_base_realtime_log");
@@ -31,6 +31,6 @@ public class TimeseriesQueryTest {
     }
 
 }
-
+```
 
 主要参考：https://github.com/LinxTeng/druid-java-client
