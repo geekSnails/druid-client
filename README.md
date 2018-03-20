@@ -1,17 +1,17 @@
 # druid-client
-This is a client that can be used to make Druid queries easily, through generating JSON.
+This is a client that can be used to make Druid queries easily, through generating JSON.  
 
-#Installation
-To install this library, run mvn install. You can then include it in projects with Maven by using the dependency:
+#Installation  
+To install this library, run mvn install. You can then include it in projects with Maven by using the dependency:  
 
-<dependency>
-  <groupId>com.qiyi.search</groupId>
-  <artifactId>druid-client</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
+<dependency>  
+  <groupId>com.qiyi.search</groupId>  
+  <artifactId>druid-client</artifactId>  
+  <version>1.0-SNAPSHOT</version>  
+</dependency>  
 
-#Example
-see the package com.qiyi.search.druidclient.test, use TimeSeries search like below:
+#Example  
+see the package com.qiyi.search.druidclient.test, use TimeSeries search like below:  
 
 public class TimeseriesQueryTest {
     public static void main(String[] args){
