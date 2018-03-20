@@ -1,7 +1,7 @@
 # druid-client
 This is a client that can be used to make Druid queries easily, through generating JSON.  
 
-#Installation  
+## Installation  
 To install this library, run mvn install. You can then include it in projects with Maven by using the dependency:  
 
 <dependency>  
@@ -10,7 +10,7 @@ To install this library, run mvn install. You can then include it in projects wi
   <version>1.0-SNAPSHOT</version>  
 </dependency>  
 
-#Example  
+## Example   
 see the package com.qiyi.search.druidclient.test, use TimeSeries search like below:  
 
 public class TimeseriesQueryTest {
