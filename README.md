@@ -4,13 +4,13 @@ This is a client that can be used to make Druid queries easily, through generati
 ## Installation  
 To install this library, run mvn install. You can then include it in projects with Maven by using the dependency:  
 
-···jar包引用
+```jar包引用
 <dependency>
   <groupId>com.qiyi.search</groupId>
   <artifactId>druid-client</artifactId>  
   <version>1.0-SNAPSHOT</version>  
 </dependency>  
-
+```  
 ## Example   
 see the package com.qiyi.search.druidclient.test, use TimeSeries search like below:  
 
