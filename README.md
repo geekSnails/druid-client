@@ -1,5 +1,6 @@
 # druid-client
-提供一个使用Java访问Druid的便利客户端，主要通过拼接访问Drui的JSON，来达到访问Druid的目的。
+This is a client that can be used to make Druid queries easily, through generating JSON.
+
 #Installation
 To install this library, run mvn install. You can then include it in projects with Maven by using the dependency:
 
@@ -23,7 +24,7 @@ public class TimeseriesQueryTest {
                                           .add(new NotFilter().field(new SelectorFilter().dimension("platform1Id").value("1"))));
         timeseriesQuery.setAggregations(new Aggregator[] {new SumAggregator("sum__impressionCount").fieldName("impressionCount").longSum()});
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        DruidClient druidClient = new DruidClient("http://node19-64-10-bdyf.qiyi.hadoop:8082", httpClient);
+        DruidClient druidClient = new DruidClient("****此处需要设置****", httpClient);
         DruidResponse aa = druidClient.execute(timeseriesQuery);
         System.out.println(aa);
     }
