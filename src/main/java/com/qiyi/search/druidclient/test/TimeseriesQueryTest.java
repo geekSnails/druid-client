@@ -24,7 +24,7 @@ public class TimeseriesQueryTest {
                                           .add(new NotFilter().field(new SelectorFilter().dimension("platform1Id").value("1"))));
         timeseriesQuery.setAggregations(new Aggregator[] {new SumAggregator("sum__impressionCount").fieldName("impressionCount").longSum()});
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        DruidClient druidClient = new DruidClient("http://node19-64-10-bdyf.qiyi.hadoop:8082", httpClient);
+        DruidClient druidClient = new DruidClient("***********", httpClient);
         DruidResponse aa = druidClient.execute(timeseriesQuery);
         System.out.println(aa);
     }
